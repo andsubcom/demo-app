@@ -57,7 +57,7 @@ function PrivateLayout({ children }) {
   })
 
   if(hasAccess) {
-    return (  
+    return (
       <>
         { children }
       </>
