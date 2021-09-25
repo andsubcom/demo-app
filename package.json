@@ -1,0 +1,88 @@
+{
+  "name": "zerion-playground",
+  "version": "0.0.1",
+  "description": "Create React App + Fastify server",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server:watch": "tsc --project tsconfig.server.json --watch --preserveWatchOutput --pretty",
+    "server:dev": "cross-env NODE_ENV=development nodemon",
+    "server:build": "rimraf dist && tsc",
+    "server:start": "node dist/index.js"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "author": "Matschik <mathieu.schimmerling@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.14",
+    "@chakra-ui/react": "^1.6.5",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@fontsource/inter": "^4.5.0",
+    "@metamask/jazzicon": "^2.0.0",
+    "@prisma/client": "^3.1.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@usedapp/core": "^0.4.1",
+    "axios": "^0.21.4",
+    "bignumber.js": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "defi-sdk": "^0.1.0-alpha.25",
+    "ethers": "^5.4.0",
+    "fastify": "^3.21.3",
+    "fastify-cors": "^6.0.2",
+    "fastify-env": "^2.1.1",
+    "fastify-plugin": "^3.0.0",
+    "fastify-sensible": "^3.1.1",
+    "fluent-json-schema": "^3.0.1",
+    "framer-motion": "^4.1.17",
+    "jsonwebtoken": "^8.5.1",
+    "next": "^11.1.2",
+    "next-auth": "^3.29.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2"
+  },
+  "resolutions": {
+    "@ethersproject/abi": "5.2.0",
+    "@ethersproject/contracts": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.6",
+    "@types/react": "^17.0.24",
+    "fastify-tsconfig": "^1.0.1",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.4.1",
+    "prisma": "^3.1.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
