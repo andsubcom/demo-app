@@ -47,7 +47,7 @@ export default function PageContent({
       ""
     );
   return (
-    <Container width="1040px" paddingTop="1.5rem">
+    <Container width="960px" maxW="960px" paddingTop="1.5rem">
       {header}
       {children}
     </Container>

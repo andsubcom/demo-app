@@ -28,15 +28,15 @@ export default function Nav() {
       marginTop={{ md: "-4rem" }}
       zIndex="99"
     >
-      <Container maxW="920px" paddingTop="5px">
+      <Container maxW="1260px" paddingTop="5px">
         <Stack
+          mt="4px"
           direction={["column", "row"]}
           alignItems={["flex-end", "center"]}
         >
           <Image
-            w="42px"
-            h="42px"
-            boxSize="54px"
+            marginLeft='6px'
+            boxSize="42px"
             src="/logo.png"
           />
           <Text fontSize="xl" fontWeight="500">
