@@ -9,7 +9,7 @@ function PageWrapper({children, ...rest}) {
       flexDirection='column'
       h='100vh'
       w='100%'
-      bg='gray.800'
+      bg='gray.900'
       {...rest}
       >
       { children }
