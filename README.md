@@ -8,7 +8,14 @@ $ yarn install
 
 ## Usage
 
-### Server
+### Client
+
+```bash
+# start
+$ yarn start
+```
+
+### Server (currently you don't need to run it)
 ```bash
 # Required: typescript watch compilation
 $ yarn server:watch
@@ -17,9 +24,3 @@ $ yarn server:watch
 $ yarn server:dev
 ```
 
-### Client
-
-```bash
-# start
-$ yarn start
-```

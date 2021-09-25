@@ -7,19 +7,16 @@ import { DAppProvider } from "@usedapp/core"
 
 import Router from './router'
 
-export const endpoint = "wss://api-staging.zerion.io";
-export const API_TOKEN = "Zerion.0JOY6zZTTw6yl5Cvz9sdmXc7d5AhzVMG";
-
 client.configure({
-  url: endpoint,
-  apiToken: API_TOKEN,
+  url: process.env.ZERION_ENDPOINT,
+  apiToken: process.env.ZERION_API_TOKEN,
   hooks: {
     willSendRequest: request => {
-      return request;
+      return request
     },
   },
-});
-Object.assign(window, { client });
+})
+Object.assign(window, { client })
 
 
 const App = () => {
