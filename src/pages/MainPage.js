@@ -6,7 +6,25 @@ import { Grid, Flex, Heading } from '@chakra-ui/react'
 import { Header, PageWrapper } from 'modules/layout'
 import { Card } from 'elements'
 
+import { useEthers } from '@usedapp/core'
+import { useAddressAssets } from 'defi-sdk'
+
 function MainPage(props) {
+  const { account } = useEthers()
+
+  const assets = useAddressAssets(
+    {
+      currency: "USD",
+      address: account || "",
+    },
+    {
+      enabled: Boolean(account),
+    },
+  )
+
+  console.log('assets', assets)
+  console.log('account', account)
+
   return (
     <PageWrapper>
       <Header/>
