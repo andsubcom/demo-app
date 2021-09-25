@@ -22,7 +22,7 @@ function Header(props) {
       </Flex>
       <Flex flexDirection='row'>
         <Link to='/plans'>
-          <Button mr='18px' backgroundColor='pink.700' colorScheme="pink" variant="solid">
+          <Button mr='18px' colorScheme="pink" variant="solid">
             Get Premium
           </Button>
         </Link>
