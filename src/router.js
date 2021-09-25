@@ -5,6 +5,7 @@ import PublicLayout from 'layout/PublicLayout'
 import PrivateLayout from 'layout/PrivateLayout'
 
 import MainPage from 'pages/MainPage'
+import AdminPage from 'pages/AdminPage'
 import TestPage from 'pages/TestPage'
 import PlansPage from 'pages/PlansPage'
 import PrivatePage from 'pages/PrivatePage'
@@ -30,6 +31,7 @@ const Routes = ({
     <Switch>
       <PublicRoute exact path={'/'} component={MainPage} layout={PublicLayout} />
       <PublicRoute exact path={'/test'} component={TestPage} layout={PublicLayout} />
+      <PublicRoute exact path={'/admin'} component={AdminPage} layout={PublicLayout} />
       <PublicRoute exact path={'/plans'} component={PlansPage} layout={PublicLayout} />
       <PublicRoute exact path={'/private'} component={PrivatePage} layout={PrivateLayout} />
 

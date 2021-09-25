@@ -5,6 +5,8 @@ import theme from "./theme"
 import "@fontsource/inter"
 import { DAppProvider } from "@usedapp/core"
 
+import "./App.css"
+
 import Router from './router'
 
 client.configure({
