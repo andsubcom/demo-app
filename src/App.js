@@ -8,8 +8,8 @@ import { DAppProvider } from "@usedapp/core"
 import Router from './router'
 
 client.configure({
-  url: process.env.ZERION_ENDPOINT,
-  apiToken: process.env.ZERION_API_TOKEN,
+  url: process.env.REACT_APP_ZERION_ENDPOINT,
+  apiToken: process.env.REACT_APP_ZERION_API_TOKEN,
   hooks: {
     willSendRequest: request => {
       return request
