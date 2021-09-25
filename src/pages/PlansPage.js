@@ -6,7 +6,7 @@ import { Grid, Flex, Heading } from '@chakra-ui/react'
 import { Header, PageWrapper } from 'modules/layout'
 import { Card } from 'elements'
 
-function MainPage(props) {
+function PlansPage(props) {
   return (
     <PageWrapper>
       <Header/>
@@ -18,20 +18,14 @@ function MainPage(props) {
         padding='0px 0px 128px 0px'
         margin='0 auto'
       >
-        <Heading as="h3" size="lg" padding='0px 0px 28px 6px' color='white'>Latest Releases</Heading>
-        <Grid templateColumns="repeat(4, 1fr)" gap={6}>
-          <Card widht="100%" />
-          <Card widht="100%" />
-          <Card widht="100%" />
-          <Card widht="100%" />
-        </Grid>
+        <Heading as="h3" size="lg" padding='0px 0px 28px 6px' color='white'>Plans</Heading>
       </Flex>
     </PageWrapper>
   )
 }
 
-MainPage.propTypes = {
+PlansPage.propTypes = {
 
 }
 
-export default MainPage
+export default PlansPage

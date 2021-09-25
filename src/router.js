@@ -6,6 +6,7 @@ import PrivateLayout from 'layout/PrivateLayout'
 
 import MainPage from 'pages/MainPage'
 import TestPage from 'pages/TestPage'
+import PlansPage from 'pages/PlansPage'
 import PrivatePage from 'pages/PrivatePage'
 import ForbiddenPage from 'pages/ForbiddenPage'
 
@@ -29,6 +30,7 @@ const Routes = ({
     <Switch>
       <PublicRoute exact path={'/'} component={MainPage} layout={PublicLayout} />
       <PublicRoute exact path={'/test'} component={TestPage} layout={PublicLayout} />
+      <PublicRoute exact path={'/plans'} component={PlansPage} layout={PublicLayout} />
       <PublicRoute exact path={'/private'} component={PrivatePage} layout={PrivateLayout} />
 
       <PublicRoute exact path={'/403'} component={ForbiddenPage} layout={PublicLayout} />
