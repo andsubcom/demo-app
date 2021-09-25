@@ -1,8 +1,8 @@
 import React from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 
-import PublicLayout from 'layouts/PublicLayout'
-import PrivateLayout from 'layouts/PrivateLayout'
+import PublicLayout from 'layout/PublicLayout'
+import PrivateLayout from 'layout/PrivateLayout'
 
 import MainPage from 'pages/MainPage'
 import TestPage from 'pages/TestPage'
