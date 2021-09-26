@@ -8,6 +8,8 @@ const useCheckSubscripton = (user: string, subscriptionId: number | BigNumber) =
     const awakeSDK = useAwakeSDK();
 
     const fetchSubscriptionHub = useCallback(async (isMounted: boolean) => {
+        console.log('user ----> ', user)
+        console.log('awakeSDK ----> ', awakeSDK)
         let result: Boolean = await awakeSDK.subscriptionHub.checkUserHasActiveSubscription(user, subscriptionId);
 
         setResult(result);

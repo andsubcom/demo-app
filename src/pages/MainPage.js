@@ -13,8 +13,8 @@ import useCheckSubscripton from 'modules/awake/hooks/checkSubscription'
 function MainPage(props) {
   const { account } = useEthers()
   
-  // const valid = useCheckSubscripton("0x2E3b1Acb6963c188Ea8855dBF5f902B2c6B7f41d", 2)
-  // console.log('valid', valid)
+  const valid = useCheckSubscripton("0x2E3b1Acb6963c188Ea8855dBF5f902B2c6B7f41d", 2)
+  console.log('valid', valid)
 
   const assets = useAddressAssets(
     {
