@@ -4,6 +4,7 @@ import { ChakraProvider } from "@chakra-ui/react"
 import theme from "./theme"
 import "@fontsource/inter"
 import { DAppProvider } from "@usedapp/core"
+import AwakeContextProvider from "./modules/awake";
 
 import "./App.css"
 
@@ -25,7 +26,9 @@ const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <DAppProvider config={{}}>
-        <Router />
+        <AwakeContextProvider>
+          <Router />
+        </AwakeContextProvider>
       </DAppProvider>
     </ChakraProvider>
   )

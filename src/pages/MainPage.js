@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import { Grid, Flex, Heading } from '@chakra-ui/react'
@@ -8,9 +8,13 @@ import { Card } from 'elements'
 
 import { useEthers } from '@usedapp/core'
 import { useAddressAssets } from 'defi-sdk'
+import useCheckSubscripton from 'modules/awake/hooks/checkSubscription'
 
 function MainPage(props) {
   const { account } = useEthers()
+  
+  // const valid = useCheckSubscripton("0x2E3b1Acb6963c188Ea8855dBF5f902B2c6B7f41d", 2)
+  // console.log('valid', valid)
 
   const assets = useAddressAssets(
     {
